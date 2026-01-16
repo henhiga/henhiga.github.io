@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>sintonia wavelength jogo</title>
+    <title>wavelength jogo</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap" rel="stylesheet" />
     <style>
@@ -419,15 +419,15 @@
         <h1 class="title">Sintonia(Wavelength)</h1>
         <h2>Team Setup</h2>
         <div class="team-count">
-            <label for="teamCount">Number of Teams (1-5):</label>
+            <label for="teamCount">Numero de times (1-5):</label>
             <input type="number" id="teamCount" min="1" max="5" value="2">
         </div>
         <div id="teamNames"></div>
-        <button id="startGame">Start Game</button>
+        <button id="startGame">Começar</button>
         <button id="howToPlayButton" class="how-to-play">How to Play</button>
     </div>
     <div class="game-container">
-        <h1 class="title">Sintonia(Wavelength)</h1>
+        <h1 class="title">Wavelength</h1>
         <div class="board">
             <div class="target-area" id="targetArea"></div>
             <div class="needle-container" id="needleContainer">
@@ -757,7 +757,7 @@
                 isTargetVisible = !isTargetVisible;
                 targetArea.style.display = isTargetVisible ? "block" : "none";
                 if (!isTargetVisible) {
-                    toggleButton.textContent = "Reveal Target";
+                    toggleButton.textContent = "Revelar Obj";
                     scoreElement.textContent = "";
                     showNeedle();
                     canMoveNeedle = true; // Allow needle movement when target is hidden
